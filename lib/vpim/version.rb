@@ -7,9 +7,9 @@
 =end
 
 module Vpim
-  PRODID = '-//Octet Cloud//vPim 11.6.21//EN'
 
-  VERSION = '11.6.21'
+  VERSION = '11.6.22'
+  PRODID = "-//Octet Cloud//vPim #{VERSION}//EN"
 
   # Return the API version as a string.
   def Vpim.version
