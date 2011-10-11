@@ -1,3 +1,4 @@
+# encoding: utf-8
 =begin
   Copyright (C) 2008 Sam Roberts
 
@@ -401,8 +402,7 @@ module Vpim
         @prefix     = n[3] || ""
         @suffix     = n[4] || ""
 
-        # FIXME - make calls to #fullname fail if fn is nil
-        @fullname = (fn || "").strip
+        @fullname = fn.present? ? fn.force_encoding('utf-8').strip : ''
       end
 
       def encode #:nodoc:
