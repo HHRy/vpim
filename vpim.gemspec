@@ -5,11 +5,11 @@ require "vpim/version"
 Gem::Specification.new do |s|
   s.name        = "vpim"
   s.version     = Vpim::VERSION
-  s.authors     = ["Ryan Stenhouse"]
-  s.email       = ["ryan@freeagentcentral.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.authors     = ['Sam Roberts', 'Ryan Stenhouse']
+  s.email       = ['vieuxtech@gmail.com','ryan@stenhou.se']
+  s.homepage    = "http://vpim.rubyforge.org"
+  s.summary     = %q{iCal and vCard support for Ruby, even 1.9.}
+  s.description = %q{This is a pure-ruby libarary for decoding and encoding vcCard and iCal data. Updated to support 1.9 and UTF-8 by Ryan Stenhouse}
 
   s.rubyforge_project = "vpim"
 
