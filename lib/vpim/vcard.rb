@@ -687,6 +687,7 @@ module Vpim
       end
 
       string.force_encoding(Encoding::UTF_8)
+      puts "\n\n\n\n\n#{string}\n\n\n\n"
       entities = Vpim.expand(Vpim.decode(string))
 
       # Since all vCards must have a begin/end, the top-level should consist
