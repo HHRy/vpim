@@ -668,14 +668,8 @@ module Vpim
       else
         raise ArgumentError, "Vcard.decode cannot be called with a #{card.type}"
       end
-      puts "\n\n\n\n\n\n\n\n\n\n\n\n"
-      puts string.inspect
-      puts string[0].inspect
-      puts string[1].inspect
-      puts string[2].inspect
-      puts string[0,3].inspect
-      puts "\n\n\n\n\n\n\n\n\n\n\n\n"
-      case string
+
+      case string.force_encoding('binary')
         when Regexp.new('^\xEF\xBB\xBF', nil, 'n')
           string = string.sub("\xEF\xBB\xBF", '')
         when Regexp.new('^\xFE\xFF', nil, 'n')
